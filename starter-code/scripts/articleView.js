@@ -100,12 +100,18 @@ articleView.initNewArticlePage = function() {
 
 // this is the function that generates the preview and shows the export field
 articleView.create = function() {
-  // TODO: Set up a var to hold the new article we are creating.
+  //Done! TODO: Set up a var to hold the new article we are creating.
+  var newArticle;
   // Clear out the #articles element, so we can put in the updated preview
-
-
-  // TODO: Instantiate an article based on what's in the form fields:
-
+  $('#articles').empty();
+  // Done! TODO: Instantiate an article based on what's in the form fields:
+  newArticle = {
+    title: $('#input-title').val(),
+    body: $('#input-body').val(),
+    author: $('#input-author').val(),
+    authorUrl: $('#input-authorUrl').val(),
+    category: $('#input-category').val()
+  };
 
   // TODO: Use our interface to the Handblebars template to put the article preview into the DOM:
 
