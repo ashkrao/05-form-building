@@ -47,13 +47,47 @@
 
       <section id="write" class="tab-content">
         <h1>Create New Article</h1>
-        <!-- TODO: Set up a form to accept user input for a new blog article. Remember that we need:
+        <!-- Done! TODO: Set up a form to accept user input for a new blog article. Remember that we need:
                    1. Article title
                    2. Article body
                    3. Article author
                    4. Author's URL
                    5. Article category
                    6. Some way to know if this article is a draft or is published -->
+        <form id = "input-form">
+            <label>
+             <h5>Title</h5>
+             <input type="text" id="input-title"/>
+            </label>
+
+            <label>
+             <h5>Body</h5>
+             <textarea id="input-body"></textarea>
+            </label>
+
+            <label>
+             <h5>Author</h5>
+             <input type="text" id="input-author"/>
+            </label>
+
+            <label>
+             <h5>Author URL</h5>
+             <input type="text" id="input-authorUrl"/>
+            </label>
+
+            <label>
+             <h5>Article Category</h5>
+             <input type="text" id="input-category"/>
+            </label>
+
+            <br/>
+            <br/>
+            <label>
+             <input type="checkbox" id="input-published"/>
+             Published
+            </label>
+
+        </form>
       </section>
 
       <section id="articles" class="tab-content">
