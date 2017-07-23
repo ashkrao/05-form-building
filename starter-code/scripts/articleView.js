@@ -74,10 +74,22 @@ articleView.setTeasers = function() {
 };
 
 articleView.initNewArticlePage = function() {
- // TODO: Make the tabs work. Right now, you're seeing all the tab content (items with a class of tab-content) on the page at once. The section with the id of "write" should show when the "write" tab is clicked; it is also the default and should be shown on page load. The section with the id of "articles" should show when the "preview" tab is clicked.
+// TODO: Make the tabs work. Right now, you're seeing all the tab content (items with a class of tab-content) on the page at once.
+// The section with the id of "write" should show when the "write" tab is clicked;
+// it is also the default and should be shown on page load.
+// The section with the id of "articles" should show when the "preview" tab is clicked.
+  $('.tab-content').hide();
+  $('#write').show();
+
+  $('.tab').on('click', function() {
+    $('.tab-content').hide();
+
+    var tabId = $(this).attr('data-content');
+    $('#' + tabId).show();
+  });
 
   // TODO: Hide the article-export section on page load
-
+  $('#article-export').hide();
   $('#article-json').on('focus', function(){
     this.select();
   });
