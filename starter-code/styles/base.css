@@ -46,3 +46,19 @@ a:visited {
 /*FORM STYLES
 =======================================*/
 /*TODO: Add the CSS needed to style the form*/
+input[type="text"]  {
+  width :90%;
+  font-size: 30px;
+  margin-top: auto;
+  margin-left: auto;
+  border: 2px green;
+  border-style: none none solid none;
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+  margin-top: auto;
+  margin-left: auto;
+  border: 2px green solid;
+}
